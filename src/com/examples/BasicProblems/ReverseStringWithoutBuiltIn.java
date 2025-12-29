@@ -1,4 +1,4 @@
-package com.examples.Problems;
+package com.examples.BasicProblems;
 
 public class ReverseStringWithoutBuiltIn {
     public static void main(String[] args){

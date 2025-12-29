@@ -4,7 +4,7 @@ package com.examples.VISAInterview;
 // Binary search modified
 public class MinimumInSortAndRotatedArray {
     public static void main(String[] args){
-        int[] a = new int[]{5,4,0,1,2,3};
+        int[] a = new int[]{4,5,0,1,2,3};
         System.out.println(minimum(a, 0, a.length-1));
     }
 

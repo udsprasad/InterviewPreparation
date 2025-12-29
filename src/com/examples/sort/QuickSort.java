@@ -33,7 +33,7 @@ Key idea: Each pivot ends in its final sorted position, and recursion sorts the 
     private static int partition(int[] a, int start, int end) {
         int pivot = a[end]; // last element as pivot
         int i = start;
-        for(int j =start; j<=end; j++) {
+        for(int j =start; j<end; j++) {
             if(a[j] < pivot) {
                 int temp = a[j];
                 a[j] = a[i];
@@ -41,12 +41,9 @@ Key idea: Each pivot ends in its final sorted position, and recursion sorts the 
                 i++;
             }
         }
-        int j = end;
-        while(j>i){
-            a[j] = a[j-1];
-            j--;
-        }
-        a[j] = pivot;
-        return j;
+        int temp = a[i];
+        a[i] = a[end];
+        a[end] = temp;
+        return i;
     }
 }

@@ -1,4 +1,4 @@
-package com.examples.Problems;
+package com.examples.BasicProblems;
 
 public class PalindromString {
     public static void main(String[] args) {
