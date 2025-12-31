@@ -1,6 +1,7 @@
 package com.examples.CapgeminiInterview;
 
-// best code
+// best code for sorted
+// for unsorted we need to use n(n+1)/2
 public class findtheMissingNumber {
     public static void main(String[] args) {
         int[] a =new int[]{1,2,4,5,7};
