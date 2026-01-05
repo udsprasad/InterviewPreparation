@@ -14,15 +14,15 @@ public class SortColorWithDutchFlag {
         int start = 0, mid =0, end = a.length-1;
 
         while(mid <= end) {
-            if (a[mid] == 2) {
-                swapOwn(a, mid, end);
-                mid++;
-                end--;
-            } else if (a[mid] == 0) {
+
+            if (a[mid] == 0) {
                 swapOwn(a, mid, start);
                 mid++;
                 start++;
-            } else if (a[mid]==1) {
+            }else if (a[mid] == 2) {
+                swapOwn(a, mid, end);
+                end--;
+            }  else if (a[mid]==1) {
                 mid++;
             }
         }
