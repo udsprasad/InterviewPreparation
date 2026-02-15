@@ -27,9 +27,8 @@ public class FindAllAnagrams {
                 map.put(c, map.get(c)-1);
                 if(map.get(c) ==0) count--;
             }
-            end++;
 
-            while(end-start == p.length()){
+            while(end-start+1 == p.length()){
                 if(count==0) result.add(start);
 
                 char l = s.charAt(start);
@@ -39,6 +38,7 @@ public class FindAllAnagrams {
                 }
                 start++;
             }
+            end++;
         }
         return result;
     }
